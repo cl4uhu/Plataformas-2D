@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229398178}
   - component: {fileID: 229398177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35bf48f17b22c534cb1f6bd280ee2011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrounded: 0
 --- !u!61 &305016940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ GameObject:
   - component: {fileID: 790256593}
   - component: {fileID: 790256595}
   - component: {fileID: 790256594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
