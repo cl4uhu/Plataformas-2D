@@ -8265,6 +8265,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1465837892}
+  - {fileID: 2074692485}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1415087573
@@ -8315,6 +8316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpeed: 4
+  _jumpForce: 7
 --- !u!50 &1415087575
 Rigidbody2D:
   serializedVersion: 4
@@ -8517,7 +8519,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 949013780}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1415087572}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -8525,4 +8527,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 229398178}
   - {fileID: 1415087572}
-  - {fileID: 2074692485}
