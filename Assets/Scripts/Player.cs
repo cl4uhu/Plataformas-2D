@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-      _rBody2D.AddForce(new Vector2(_playerInputHorizontal *_playerSpeed, 0));
+      _rBody2D.AddForce(new Vector2(_playerInputHorizontal *_playerSpeed, 0), ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
