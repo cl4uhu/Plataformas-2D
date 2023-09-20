@@ -45,6 +45,6 @@ public class Player : MonoBehaviour
 
     void Jump ()
     {
-      _rBody2D.AddForce(new Vector2(0, _jumpForce ), ForceMode2D.Impulse);
+      _rBody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 }
