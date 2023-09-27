@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header ("Player Stats")]
+    [Tooltip("Controla la velocidad de movimiento del personaje")]
     [SerializeField]private float _playerSpeed = 5;
+    [Tooltip("Controla la fuerza de salto del personaje")]
     [SerializeField]private float _jumpForce = 5;
     private float _playerInputHorizontal; 
     //private float _playerInputVertical;
 
     private Rigidbody2D _rBody2D;
     private GroundSensor _sensor;
+    private Animator _animator;
 
     // Start is called before the first frame update
     void Start()
     {
       _rBody2D = GetComponent<Rigidbody2D>();
       _sensor = GetComponentInChildren<GroundSensor>();
+      _animator = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -42,6 +47,16 @@ public class Player : MonoBehaviour
       /*_playerInputVertical = Input.GetAxis("Vertical");
         
       transform.Translate(new Vector2(_playerInputHorizontal, _playerInputVertical) * _playerSpeed * Time.deltaTime);*/ 
+      
+      if(_playerInputHorizontal != 0)
+      {
+          _animator.SetBool("IsRunning", true);
+      }
+
+      if(_playerInputHorizontal == 0)
+      {
+          _animator.SetBool("IsRunning", false);
+      }
     }
 
     void Jump ()
