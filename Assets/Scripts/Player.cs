@@ -49,14 +49,21 @@ public class Player : MonoBehaviour
         
       transform.Translate(new Vector2(_playerInputHorizontal, _playerInputVertical) * _playerSpeed * Time.deltaTime);*/ 
       
-      if(_playerInputHorizontal != 0)
+      if(_playerInputHorizontal < 0)
       {
+          transform.rotation = Quaternion.Euler(0, 180, 0);
           _animator.SetBool("IsRunning", true);
       }
 
-      if(_playerInputHorizontal == 0)
+      else if(_playerInputHorizontal > 0)
       {
-          _animator.SetBool("IsRunning", false);
+          transform.rotation = Quaternion.Euler(0, 0, 0);
+          _animator.SetBool("IsRunning", true);
+      }
+      
+      else
+      {
+         _animator.SetBool("IsRunning", false);
       }
     }
 
