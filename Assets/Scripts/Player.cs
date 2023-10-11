@@ -14,14 +14,13 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _rBody2D;
     //private GroundSensor _sensor;
-    public Animator _animator;
+    [SerializeField] public Animator _animator;
 
     // Start is called before the first frame update
     void Start()
     {
       _rBody2D = GetComponent<Rigidbody2D>();
       //_sensor = GetComponentInChildren<GroundSensor>();
-      _animator = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
