@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimationEvent : MonoBehaviour
 {
-    public void EventTest(string text)
+    public void EventTest(GameObject obj)
     {
-        Debug.Log(text);
+        obj.SetActive(true);
     }
 }
