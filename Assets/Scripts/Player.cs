@@ -77,4 +77,10 @@ public class Player : MonoBehaviour
     {
       _rBody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
+
+    void SignalTest ()
+    {
+      Debug.Log("Señal recibida");
+    }
+
 }
