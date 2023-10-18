@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimationEvent : MonoBehaviour
 {
-    public void EventTest()
+    public void EventTest(string text)
     {
-        Debug.Log("Estoy saltando");
+        Debug.Log(text);
     }
 }
