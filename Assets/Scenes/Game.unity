@@ -8559,7 +8559,7 @@ Transform:
   m_GameObject: {fileID: 1203747432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6399994, y: 0, z: -10}
+  m_LocalPosition: {x: 0.00000023841858, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8731,8 +8731,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Events:
-    m_Signals: []
-    m_Events: []
+    m_Signals:
+    - {fileID: 11400000, guid: 3b4248e4155540c499b141280202fbd5, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1415087574}
+          m_TargetAssemblyTypeName: Player, Assembly-CSharp
+          m_MethodName: SignalTest
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1465837891
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,6 +8759,7 @@ GameObject:
   - component: {fileID: 1465837892}
   - component: {fileID: 1465837893}
   - component: {fileID: 1465837894}
+  - component: {fileID: 1465837895}
   m_Layer: 0
   m_Name: mage
   m_TagString: Untagged
@@ -8839,6 +8855,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1465837895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465837891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02fdd29c411ef041acda4d40af85a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703961963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8883,8 +8911,6 @@ PlayableDirector:
     value: {fileID: 2009640953}
   - key: {fileID: -8390214411048462547, guid: b02f60075d8edce4f82edab9de22c5b1, type: 2}
     value: {fileID: 1415087577}
-  - key: {fileID: -1259237960408760475, guid: b02f60075d8edce4f82edab9de22c5b1, type: 2}
-    value: {fileID: 2009640953}
   m_ExposedReferences:
     m_References:
     - 507d20977a261cc4d81e837cac872c1c: {fileID: 1465837891}
@@ -9124,7 +9150,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.47
+  orthographic size: 5.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9149,7 +9175,7 @@ Transform:
   m_GameObject: {fileID: 2074692482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.67, y: 0.110000014, z: -10.828206}
+  m_LocalPosition: {x: 0.00000023841858, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
