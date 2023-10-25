@@ -33,11 +33,6 @@ public class SoundManager : MonoBehaviour
     
     }
 
-    void Update()
-    {
-
-    }
-
     public void DeathSource()
     {
         _sfxAudioSource.PlayOneShot(deathSound); 
