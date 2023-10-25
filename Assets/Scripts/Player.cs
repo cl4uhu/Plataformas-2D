@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        GameManager.instance.GameOver(); 
+        GameManager.instance.GameOver();
+        SoundManager.instance.GameOver(); 
     }
-
 }
