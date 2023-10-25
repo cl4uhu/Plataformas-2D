@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     {
       _rBody2D = GetComponent<Rigidbody2D>();
       //_sensor = GetComponentInChildren<GroundSensor>();
+
+      Debug.Log(GameManager.instance.vidas); 
     }
 
     void FixedUpdate()
@@ -81,6 +83,11 @@ public class Player : MonoBehaviour
     public void SignalTest ()
     {
       Debug.Log("Señal recibida");
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        GameManager.instance.GameOver(); 
     }
 
 }
