@@ -10,12 +10,12 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioClip _starsound;
     AudioSource _audiosource;
 
-    VictoryMenu _victorymenu;
+    MenuManager _menuManager;
 
     void Start()
     {
       _audiosource = GetComponent<AudioSource>();
-      _victorymenu = GameObject.Find("VictoryMenu").GetComponent<VictoryMenu>();
+      _menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -33,7 +33,7 @@ public class ItemCollector : MonoBehaviour
     {
         if(_stars == 6)
         {
-          _victorymenu.Victory();
+          _menuManager.Victory();
         }
     }
 }

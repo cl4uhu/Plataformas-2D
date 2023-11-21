@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] public Animator _animator;
     [SerializeField] private PlayableDirector _director;
 
-    DeathMenu _deathmenu; 
+    MenuManager _menuManager; 
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
       //_sensor = GetComponentInChildren<GroundSensor>();
 
       Debug.Log(GameManager.instance.vidas); 
-      _deathmenu = GameObject.Find("DeathMenu").GetComponent<DeathMenu>();
+      _menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
     }
 
     void FixedUpdate()
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("DeathZone"))
         {
-        _deathmenu.Death();
+        _menuManager.Death();
         SoundManager.instance.DeathSource(); 
         }
     }

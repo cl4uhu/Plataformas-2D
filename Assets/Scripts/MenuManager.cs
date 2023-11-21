@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DeathMenu : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
-    public void StartGame()
+    public void Victory()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Victory");
     }
-    
+
     public void Death()
     {
         SceneManager.LoadScene("Death");
+    }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
