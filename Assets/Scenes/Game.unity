@@ -9530,6 +9530,7 @@ GameObject:
   - component: {fileID: 1415087574}
   - component: {fileID: 1415087575}
   - component: {fileID: 1415087577}
+  - component: {fileID: 1415087579}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -9677,6 +9678,20 @@ MonoBehaviour:
   _stars: 0
   _starstext: {fileID: 621124704}
   _starsound: {fileID: 8300000, guid: 24912ee9cbf782b4eb1651326274dab4, type: 3}
+--- !u!114 &1415087579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415087571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46d018794d97494ab99ea0949f07d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  numOfHearts: 3
 --- !u!1 &1455234555
 GameObject:
   m_ObjectHideFlags: 0
