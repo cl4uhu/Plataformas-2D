@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rBody2D;
     //private GroundSensor _sensor;
     [SerializeField] public Animator _animator;
-    [SerializeField] private PlayableDirector _director; 
+    [SerializeField] private PlayableDirector _director;
+
+    DeathMenu _deathmenu; 
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class Player : MonoBehaviour
       //_sensor = GetComponentInChildren<GroundSensor>();
 
       Debug.Log(GameManager.instance.vidas); 
+      _deathmenu = GameObject.Find("DeathMenu").GetComponent<DeathMenu>();
     }
 
     void FixedUpdate()
@@ -85,11 +88,11 @@ public class Player : MonoBehaviour
       Debug.Log("Señal recibida");
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collider.gameObject.layer == 7)
+        if(collision.gameObject.CompareTag("DeathZone"))
         {
-        GameManager.instance.GameOver();
+        _deathmenu.Death();
         SoundManager.instance.DeathSource(); 
         }
     }

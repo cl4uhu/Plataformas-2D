@@ -8773,9 +8773,9 @@ GameObject:
   m_Component:
   - component: {fileID: 821447256}
   - component: {fileID: 821447255}
-  m_Layer: 7
-  m_Name: DeadZone
-  m_TagString: Untagged
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: DeathZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8946,6 +8946,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &941118258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941118259}
+  - component: {fileID: 941118260}
+  m_Layer: 0
+  m_Name: DeathMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &941118259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941118258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.922928, y: -6.7722154, z: -1.519899}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941118260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941118258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba37ceb3b77bf943b78f8cdebe807c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &949013778
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,7 +9463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca72b1ae51678941b084a58b0ffd7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 8300000, guid: 381f8e764668ab94fa0f7cc1798a8970, type: 3}
+  deathSound: {fileID: 8300000, guid: b9b94e851befe3e41989cf7b2d6393b0, type: 3}
 --- !u!82 &1278238451
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10423,3 +10467,4 @@ SceneRoots:
   - {fileID: 1891791012863401694}
   - {fileID: 360100507}
   - {fileID: 1054159358}
+  - {fileID: 941118259}
