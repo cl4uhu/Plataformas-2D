@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     public int _health;
     public int _numOfHearts;
 
-    public Image [] _hearts;
+    public Image[] _hearts;
 
     MenuManager _menuManager; 
 
@@ -37,7 +37,7 @@ public class Health : MonoBehaviour
 
     if(_health == 0)
     {
-            _menuManager.Lose();
+            _menuManager.Death();
     }
     }
 }
