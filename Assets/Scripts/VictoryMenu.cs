@@ -9,4 +9,9 @@ public class VictoryMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
+
+    public void Victory()
+    {
+        SceneManager.LoadScene("Victory");
+    }
 }
