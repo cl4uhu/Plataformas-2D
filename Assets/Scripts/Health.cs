@@ -12,9 +12,14 @@ public class Health : MonoBehaviour
 
     MenuManager _menuManager; 
 
-    void Update()
+    void Start()
     {
-        for (int i = 0; i < _hearts.Lenght; i++) 
+        _menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
+    }  
+
+     void Update()
+    {
+        for (int i = 0; i < _hearts.Length; i++) 
         {
             if(_health > _numOfHearts)
             {

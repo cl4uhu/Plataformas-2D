@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Star
   - DeathZone
+  - Bomb
   layers:
   - Default
   - TransparentFX
